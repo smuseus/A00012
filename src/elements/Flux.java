@@ -13,6 +13,7 @@ public class Flux extends CartisianElement {
 	public Vec3D vel;
 	Vec3D acc;
 
+	public int color;
 	float mass;
 	float relaxRange;
 	float affectRange, affectAmount;
@@ -42,10 +43,34 @@ public class Flux extends CartisianElement {
 		acc = new Vec3D();
 		avgBondPos = new Vec3D();
 		getBonds(new ArrayList<Flux>());
+		color = 255*255*255;
 
 		isGhost = false;
 	}
 
+	public Flux(Vec3D position, int color) {
+
+		mass = 0.9f;
+		relaxRange = 0.05f; // Not in pixel units ( lower = longer range );
+		affectRange = 50; // In normal units
+		affectAmount = 2; // Degree to which Flux inherits Atoms position
+							// relatice to distance between the elements
+		seperationDistance = 25;
+		seperationForce = 3;
+		bondingDistance = 20;
+		numberOfBonds = 4;
+
+		type = "Flux";
+		pos = position;
+		vel = new Vec3D();
+		acc = new Vec3D();
+		avgBondPos = new Vec3D();
+		getBonds(new ArrayList<Flux>());
+		this.color = color;
+
+		isGhost = false;
+	}
+	
 	public Flux(JSONObject flux) {
 		mass = flux.getFloat("mass");
 		relaxRange = flux.getFloat("relaxRange");

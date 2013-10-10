@@ -140,7 +140,7 @@ class Perception {
 		p.println(p.cell.capacityHandler.toString());
 
 		boolean mouseNavigation = false;
-		boolean fluxLines = true;
+		boolean FLUXLINES = false;
 		boolean AABB = false;
 
 		p.cam.beginHUD();
@@ -185,13 +185,13 @@ class Perception {
 				Flux flux = (Flux) e;
 				p.strokeWeight(1);
 				p.stroke(255);
-				if (fluxLines) {
+				if (FLUXLINES) {
 					for (Flux f : ((Flux) e).getBonds()) {
 						p.gfx.line(flux.pos, f.pos);
 					}
 				}
 				p.strokeWeight(2);
-				p.stroke(230);
+				p.stroke(flux.color);
 				p.gfx.point(flux.pos);
 			}
 		}

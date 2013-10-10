@@ -25,7 +25,7 @@ public class A00012 extends PApplet {
 		size(1280,800, P3D);
 		background(3, 7, 10);
 		frameRate(60);
-
+ 
 		gfx = new ToxiclibsSupport(this);
 
 		cell = new Cell(this);
@@ -33,13 +33,18 @@ public class A00012 extends PApplet {
 		
 		if(OCCULUS_ENABLED) observer = new OculusObserver(this);
 		if(PEASY_ENABLED) cam = new PeasyCam(this, 100);
-		perception = new Perception(this);
 		
+		perception = new Perception(this);
 		cell.addBoundary(new Boundary(2048, new Vec3D()));
+		
+		// Location, Spread, Amount, Color
+		greatFluxCluster(new Vec3D(-200,-200,-200), 50, 150, color(255,152,0));
+		greatFluxCluster(new Vec3D(200,200,-200), 	50, 150, color(200,0,120));
+		greatFluxCluster(new Vec3D(-200,-200,200), 	50, 150, color(0,50,200));
+		greatFluxCluster(new Vec3D(-200,200,200), 	50, 150, color(255,152,255));
 	}
 
 	public void draw() {
-		//correctOculus();
 		networkIO.tick();
 		cell.step();
 		perception.render();
@@ -58,6 +63,14 @@ public class A00012 extends PApplet {
 		if (key == 'f') {
 			Flux f = new Flux(new Vec3D(mouseX, mouseY, random(-20, 20)));
 			cell.addElement(f);
+		}
+	}
+	
+	public void greatFluxCluster(Vec3D location, float speard, int amount, int color) {
+		for(int i=0; i < amount; i++) {
+			Vec3D position = new Vec3D(location.x+random(-speard,speard), location.y+random(-speard,speard), location.z+random(-speard,speard));
+			Element e = new Flux(position, color);	
+			cell.addElement(e);
 		}
 	}
 	
