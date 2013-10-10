@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/base/core/core.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/gluegen-rt-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/gluegen-rt-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/gluegen-rt-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/gluegen-rt-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/gluegen-rt-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/gluegen-rt-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/jogl-all.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/jogl-all-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/jogl-all-natives-linux-armv6hf.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/jogl-all-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/jogl-all-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/jogl-all-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="lib/base/core/jogl-all-natives-windows-i586.jar"/>
+	<classpathentry kind="lib" path="lib/user/oscP5/oscP5.jar"/>
+	<classpathentry kind="lib" path="lib/user/peasycam/peasycam.jar"/>
+	<classpathentry kind="lib" path="lib/user/toxiclibs_p5/toxiclibs_p5.jar"/>
+	<classpathentry kind="lib" path="lib/user/toxiclibscore/toxiclibscore.jar"/>
+	<classpathentry kind="lib" path="lib/user/jrift/JRift.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/smuseus/Project/aeaeaeae/A00012/lib/user/jrift"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
