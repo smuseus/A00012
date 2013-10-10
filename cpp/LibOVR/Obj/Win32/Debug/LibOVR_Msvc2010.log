@@ -1,0 +1,48 @@
+﻿Build started 25.08.2013 13:20:32.
+     1>Project "C:\Users\smuseus\Project\aeaeaeae\_Research\2013\Oculus Setup\OculusSDK\LibOVR\Projects\Win32\LibOVR_Msvc2010.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "../../Obj/Win32/Debug/LibOVR.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"../../Lib/Win32/libovrd.lib" Setupapi.lib /NOLOGO ../../Obj/Win32/Debug/OVR_Alg.obj
+         ../../Obj/Win32/Debug/OVR_Allocator.obj
+         ../../Obj/Win32/Debug/OVR_Atomic.obj
+         ../../Obj/Win32/Debug/OVR_File.obj
+         ../../Obj/Win32/Debug/OVR_FileFILE.obj
+         ../../Obj/Win32/Debug/OVR_Log.obj
+         ../../Obj/Win32/Debug/OVR_Math.obj
+         ../../Obj/Win32/Debug/OVR_RefCount.obj
+         ../../Obj/Win32/Debug/OVR_Std.obj
+         ../../Obj/Win32/Debug/OVR_String.obj
+         ../../Obj/Win32/Debug/OVR_String_FormatUtil.obj
+         ../../Obj/Win32/Debug/OVR_String_PathUtil.obj
+         ../../Obj/Win32/Debug/OVR_SysFile.obj
+         ../../Obj/Win32/Debug/OVR_System.obj
+         ../../Obj/Win32/Debug/OVR_ThreadsWinAPI.obj
+         ../../Obj/Win32/Debug/OVR_Timer.obj
+         ../../Obj/Win32/Debug/OVR_UTF8Util.obj
+         ../../Obj/Win32/Debug/OVR_DeviceHandle.obj
+         ../../Obj/Win32/Debug/OVR_DeviceImpl.obj
+         ../../Obj/Win32/Debug/OVR_LatencyTestImpl.obj
+         ../../Obj/Win32/Debug/OVR_SensorFilter.obj
+         ../../Obj/Win32/Debug/OVR_SensorFusion.obj
+         ../../Obj/Win32/Debug/OVR_SensorImpl.obj
+         ../../Obj/Win32/Debug/OVR_ThreadCommandQueue.obj
+         ../../Obj/Win32/Debug/OVR_Win32_DeviceManager.obj
+         ../../Obj/Win32/Debug/OVR_Win32_DeviceStatus.obj
+         ../../Obj/Win32/Debug/OVR_Win32_HIDDevice.obj
+         ../../Obj/Win32/Debug/OVR_Win32_HMDDevice.obj
+         ../../Obj/Win32/Debug/Util_LatencyTest.obj
+         ../../Obj/Win32/Debug/OVR_Win32_SensorDevice.obj
+         ../../Obj/Win32/Debug/Util_MagCalibration.obj
+         ../../Obj/Win32/Debug/Util_Render_Stereo.obj
+         LibOVR_Msvc2010.vcxproj -> C:\Users\smuseus\Project\aeaeaeae\_Research\2013\Oculus Setup\OculusSDK\LibOVR\Projects\Win32\../../Lib/Win32/libovrd.lib
+       FinalizeBuildStatus:
+         Deleting file "../../Obj/Win32/Debug/LibOVR.unsuccessfulbuild".
+         Touching "../../Obj/Win32/Debug/LibOVR.lastbuildstate".
+     1>Done Building Project "C:\Users\smuseus\Project\aeaeaeae\_Research\2013\Oculus Setup\OculusSDK\LibOVR\Projects\Win32\LibOVR_Msvc2010.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.04
